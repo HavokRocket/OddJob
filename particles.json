@@ -1,0 +1,13 @@
+{
+    "particles":{
+        "number":{
+            "value": 100
+        },
+        "backgroundcolor":{
+            "value":"#fabf87"
+        },
+        "color":{
+            "value":"#9dca79"
+        }
+    }
+}
