@@ -6,21 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oddjob</title>
     <link rel="stylesheet" href="style.css">
-    <script src="particles.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-    
-
 </head>
 <body>
-    <div id="main">
-
     <div class="side_div">
         <a href="index.html"><img id="logo"src="images/oddjob_Logo.png"></a>
         <div class="Searchbar">
             <form>   
                 <input type="text" placeholder=" Find Jobs..." name="search">   
-                <button type="submit"  id="SUBMIT">Submit</button>   
+                <button type="button"  id="clicked">Submit</button>   
             </form>  
         </div>
         
@@ -29,21 +22,20 @@
             <form>
                 <input type="text" placeholder=" Title..." name="title">   
                 <input type="text" placeholder=" Location..." name="location">   
-                <button type="submit" onclick="" id="MAKE">List</button>
+                <button type="button" onclick="" id="MAKE">List</button>
             </form>
         </div>
         <div>
         <button type="button">My Account</button>
         </div>
     </div>
-
     <p></p>
 
     <nav>
         <div class="dropdown">
             <div class="drop-element">Current Listings</div>
             <div class="about-content">
-                <a href="">Community Listings</a>
+                <a href="index.html">Nearby Listings</a>
 			</div>
 		</div>
         
@@ -64,7 +56,7 @@
     <div id="listingstitle">Nearby Listings</div>
 
     <div class="list">
-        <div class="listing one">
+        <a href="help_page/index.html"><div class="listing" id="one">
             <div class="toptext">
                 <h4>Dallas, TX</h4>
                 <h4 class="category">VOLUNTEER</h4>
@@ -75,9 +67,9 @@
                 <img src="images/jobs/backyard.jpeg" width="100px">
                 <p>Hello! I need help with cleaning<br>up my backyard. </p>
             </div>
-        </div>
+        </div></a>
 
-        <div class="listing two">
+        <div class="listing" id="two">
             <div class="toptext">
                 <h4>Dallas, TX</h4>
                 <h4 class="category">VOLUNTEER</h4>
@@ -90,7 +82,7 @@
             </div>
         </div>
 
-        <div class="listing three">
+        <div class="listing" id="three">
             <div class="toptext">
                 <h4>Fort Worth, TX</h4>
                 <h4 class="category">PAID</h4>
@@ -120,6 +112,7 @@
          
     </footer>
 
-    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>

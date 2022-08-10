@@ -1,13 +1,20 @@
-class listing{
-    constructor(length, header, img, paidorvolunteer, summary){
-        let distance = length;
-        let title = header;
-        let image = img;
-        let type = paidorvolunteer;
-        let description = summary;
-    }
-}
+let one = document.getElementById("one");
+let two = document.getElementById("two");
+let three = document.getElementById("three");
+let numberOfTimes = 0;
+let button = document.getElementById("clicked");
 
-particlesJS.load('main', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+button.onclick = function(){
+
+    numberOfTimes++;
+    
+    if(numberOfTimes==1){
+        one.style.display = "flex";
+        two.style.display = "none";
+        three.style.display = "none";
+    }else if(numberOfTimes==2){
+        one.style.display = "none";
+        two.style.display = "none";
+        three.style.display = "flex";
+    }
+};
